@@ -1,10 +1,14 @@
 /*Her skal alt det generelle css ligge*/
 * {
   box-sizing: border-box;
+  margin: 0px;
 }
 body {
   background-color: black;
   color: white;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: auto auto;
 }
 h1 {
   font-family: "CircularSpotifyText-Medium";
@@ -18,9 +22,29 @@ p {
 }
 img {
   max-width: 100%;
+  border-radius: 5px;
 }
-/*************************************Fonte***************************************/
+nav {
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 1;
+}
 
+aside {
+  grid-row: 2 / span 1;
+  grid-column: 1 / span 1;
+}
+
+header {
+  grid-row: 1 / span 1;
+  grid-column: 2 / span 2;
+  height: 80px;
+}
+main {
+  grid-row: 2 / span 1;
+  grid-column: 2 / span 1;
+}
+
+/*************************************Fonte***************************************/
 @font-face {
   font-family: "CircularSpotifyText-Black";
   src: url(font/circular-spotify-text-font/CircularSpotifyText-Black.otf);
@@ -41,5 +65,72 @@ img {
 .sportify-playliste {
   display: flex;
   flex-direction: row;
-  gap: 40px;
+  justify-content: space-evenly;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0b0b0b;
+  margin: 10px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+main {
+  background-color: #121212;
+  margin: 10px;
+  margin-top: 0px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.venstre {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  gap: 10px;
+  margin-left: 20px;
+}
+
+.højre {
+  flex: 1;
+  text-align: right;
+}
+nav {
+  background-color: #121212;
+  margin: 10px;
+  border-radius: 10px;
+}
+aside {
+  background-color: #121212;
+  margin: 10px;
+  border-radius: 10px;
+}
+.udforsk {
+  background-color: #242424;
+  margin: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.udforsk_knap {
+  margin-left: 20px;
+}
+.logo {
+  width: 90px;
+  filter: invert(100%);
+}
+.icons {
+  filter: invert(100%);
+}
+.bibliotek {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.overskrifter {
+  margin-left: 30px;
+  margin-top: 20px;
+  font-size: 1.5rem;
 }

@@ -1,0 +1,28 @@
+---
+const header = Astro.props.header;
+const text = Astro.props.text;
+const img = Astro.props.img;
+const {variant} = Astro.props;
+
+
+---
+<article>
+<h2>{header}</h2>
+<p>{text}</p>
+</article>
+
+<style>
+    h2{
+        font-size: 1em;
+        margin-bottom: 10px;
+    }
+    p{
+        color: #A7A8A7;
+        font-size: 0.9rem;
+    }
+    article{
+        background-color: #242424;
+        border-radius: 10px;
+        padding: 20px;
+    } 
+</style>
