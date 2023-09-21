@@ -1,4 +1,22 @@
 /*Her skal alt det generelle css ligge*/
+/*************************************Fonte***************************************/
+@font-face {
+  font-family: "CircularSpotifyText-Black";
+  src: url(font/circular-spotify-text-font/CircularSpotifyText-Black.otf);
+}
+@font-face {
+  font-family: "CircularSpotifyText-Bold";
+  src: url(font/circular-spotify-text-font/CircularSpotifyText-Bold.otf);
+}
+@font-face {
+  font-family: "CircularSpotifyText-Light";
+  src: url(font/circular-spotify-text-font/CircularSpotifyText-Light.otf);
+}
+@font-face {
+  font-family: "CircularSpotifyText-Medium";
+  src: url(font/circular-spotify-text-font/CircularSpotifyText-Medium.otf);
+}
+/*************************************Generelt***************************************/
 * {
   box-sizing: border-box;
   margin: 0px;
@@ -24,6 +42,7 @@ img {
   max-width: 100%;
   border-radius: 5px;
 }
+/*************************************Grid***************************************/
 nav {
   grid-row: 1 / span 1;
   grid-column: 1 / span 1;
@@ -44,29 +63,7 @@ main {
   grid-column: 2 / span 1;
 }
 
-/*************************************Fonte***************************************/
-@font-face {
-  font-family: "CircularSpotifyText-Black";
-  src: url(font/circular-spotify-text-font/CircularSpotifyText-Black.otf);
-}
-@font-face {
-  font-family: "CircularSpotifyText-Bold";
-  src: url(font/circular-spotify-text-font/CircularSpotifyText-Bold.otf);
-}
-@font-face {
-  font-family: "CircularSpotifyText-Light";
-  src: url(font/circular-spotify-text-font/CircularSpotifyText-Light.otf);
-}
-@font-face {
-  font-family: "CircularSpotifyText-Medium";
-  src: url(font/circular-spotify-text-font/CircularSpotifyText-Medium.otf);
-}
-/*************************************Andet***************************************/
-.sportify-playliste {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
+/*************************************Header***************************************/
 header {
   display: flex;
   justify-content: space-between;
@@ -77,13 +74,6 @@ header {
   margin-bottom: 0px;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
-}
-main {
-  background-color: #121212;
-  margin: 10px;
-  margin-top: 0px;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
 }
 .venstre {
   display: flex;
@@ -97,11 +87,35 @@ main {
   flex: 1;
   text-align: right;
 }
+/*************************************Main***************************************/
+main {
+  background-color: #121212;
+  margin: 10px;
+  margin-top: 0px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.sportify-playliste {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.overskrifter {
+  margin-left: 30px;
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
+/*************************************Nav***************************************/
 nav {
   background-color: #121212;
   margin: 10px;
   border-radius: 10px;
 }
+.logo {
+  width: 90px;
+  filter: invert(100%);
+}
+/*************************************Aside***************************************/
 aside {
   background-color: #121212;
   margin: 10px;
@@ -116,10 +130,6 @@ aside {
 .udforsk_knap {
   margin-left: 20px;
 }
-.logo {
-  width: 90px;
-  filter: invert(100%);
-}
 .icons {
   filter: invert(100%);
 }
@@ -127,10 +137,4 @@ aside {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.overskrifter {
-  margin-left: 30px;
-  margin-top: 20px;
-  font-size: 1.5rem;
 }

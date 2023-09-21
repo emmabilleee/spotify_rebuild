@@ -6,48 +6,47 @@ const {variant} = Astro.props;
   <button class={variant}> <slot/> </button>
 
 <style>
-button{
-    padding:1rem;
-    border-radius: 50px;
-    padding-left: 1.7rem;
-    padding-right: 1.7rem;
-    font-family: "CircularSpotifyText-Bold";
-    font-size: 1rem;
-}
-.primary{
-  background-color: #0b0b0b;
-    color: #A5A5A5;
-    border-width: 0px;
-}
-.primary:hover{
-    color: white;
-    font-size: 1.1rem;
-}
-.secondary{
-    background-color: white;
-    color: black;
-    border-width: 0px;
-}
-.secondary:hover{
-    padding:1.1rem;
-    padding-left: 1.8rem;
-    padding-right: 1.8rem;
-}
-.third{
-    background-color: white;
-    color: black;
-    border-width: 0px;
-    font-size: 0.8rem;
-    padding:0.5rem;
-    padding-left: 0.9rem;
-    padding-right: 0.9rem;
-    margin-left: 20px;
-    margin-bottom: 15px;
-}
-.third:hover{
-    padding:0.6rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
+    button{
+        padding:1rem;
+        border-radius: 50px;
+        padding-left: 1.7rem;
+        padding-right: 1.7rem;
+        font-family: "CircularSpotifyText-Bold";
+        font-size: 1rem;
+    }
+    .primary{
+    background-color: #0b0b0b;
+        color: #A5A5A5;
+        border-width: 0px;
+    }
+    .primary:hover{
+        color: white;
+        font-size: 1.1rem;
+    }
+    .secondary{
+        background-color: white;
+        color: black;
+        border-width: 0px;
+    }
+    .secondary:hover{
+        padding:1.1rem;
+        padding-left: 1.8rem;
+        padding-right: 1.8rem;
+    }
+    .third{
+        background-color: white;
+        color: black;
+        border-width: 0px;
+        font-size: 0.8rem;
+        padding:0.5rem;
+        padding-left: 0.9rem;
+        padding-right: 0.9rem;
+        margin-left: 20px;
+        margin-bottom: 15px;
+    }
+    .third:hover{
+        padding:0.6rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 </style>
