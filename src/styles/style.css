@@ -1,0 +1,45 @@
+/*Her skal alt det generelle css ligge*/
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  color: white;
+}
+h1 {
+  font-family: "CircularSpotifyText-Medium";
+}
+h2 {
+  font-family: "CircularSpotifyText-Medium";
+}
+
+p {
+  font-family: "CircularSpotifyText-Light";
+}
+img {
+  max-width: 100%;
+}
+/*************************************Fonte***************************************/
+
+@font-face {
+  font-family: "CircularSpotifyText-Black";
+  src: url(font/circular-spotify-text-font/CircularSpotifyText-Black.otf);
+}
+@font-face {
+  font-family: "CircularSpotifyText-Bold";
+  src: url(font/circular-spotify-text-font/CircularSpotifyText-Bold.otf);
+}
+@font-face {
+  font-family: "CircularSpotifyText-Light";
+  src: url(font/circular-spotify-text-font/CircularSpotifyText-Light.otf);
+}
+@font-face {
+  font-family: "CircularSpotifyText-Medium";
+  src: url(font/circular-spotify-text-font/CircularSpotifyText-Medium.otf);
+}
+/*************************************Andet***************************************/
+.sportify-playliste {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
