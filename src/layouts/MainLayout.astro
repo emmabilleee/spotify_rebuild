@@ -1,0 +1,59 @@
+---
+import "../styles/style.css";
+import PlaylisteCard from "../components/PlaylisteCard.astro";
+import Nav from "../components/Nav.astro";
+import Button from "../components/Button.astro";
+import OpretPlayliste from "../components/OpretPlayliste.astro";
+import Pil from "../components/Pil.astro";
+import Bibliotek from "../components/Bibliotek.astro"
+
+
+const {title}= Astro.props;
+
+---
+
+	<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{title}</title>
+</head>
+<body>
+    <nav>
+        <Nav>
+        </Nav>
+    </nav>
+
+    <header>
+        <div class="venstre">
+            <Pil><img src="/icons/back-btn.svg" alt="coverbillede" class="icons"></Pil>
+            <Pil><img src="/icons/forward-btn.svg" alt="coverbillede" class="icons"></Pil>
+        </div>
+        <div class="højre">
+            <Button variant="primary">Tilmeld dig</Button>   
+            <Button variant="secondary">Log på</Button>  
+        </div> 
+    </header>
+
+    <main>
+            <slot/>
+    </main>
+
+    <aside>
+        <section class="bibliotek">
+<Bibliotek></Bibliotek>
+        </section>
+        <section class="udforsk">
+            <OpretPlayliste header="Opret din første playliste" text="Det er nemt - vi skal nok hjælpe dig" ></OpretPlayliste>
+            <Button variant="third">Opret playliste</Button> 
+        </section> 
+        <section class="udforsk">
+            <OpretPlayliste header="Lad os finde nogle podcast du kan følge" text="Vi holder dig orienteret om nye episoder" ></OpretPlayliste>
+            <Button variant="third" class="udforsk_knap">Udforsk podcast</Button> 
+        </section>   
+    </aside>  
+
+</body>
+</html>
+

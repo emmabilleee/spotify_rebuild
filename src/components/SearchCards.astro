@@ -1,0 +1,58 @@
+---
+const header = Astro.props.header;
+const text = Astro.props.text;
+const img = Astro.props.img;
+const {color} = Astro.props;
+
+
+---
+<article class={color}>
+<h2>{header}</h2>
+<slot/>
+
+</article>
+
+<style>
+    h2 {
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+   
+    article {
+        background-color: violet;
+        border-radius: 5px;
+        padding: 15px;
+        width: 190px;
+        margin-bottom: 40px;
+        margin-top: 20px;
+        margin: 20px; 
+    }  
+    .first{
+                background-color: #25856A;
+    }
+    .second{
+                background-color: #1D3264;
+    }
+    .third{
+                background-color: #8C67AC;
+    }
+    .four{
+                background-color: #F20F79;
+    }.fifth{
+                background-color: #8C67AC;
+    }
+    .sixth{
+                background-color: #6852F2;
+    }.seven{
+                background-color: #B49BC8;
+    }
+    .eight{
+                background-color: #F037A5;
+    }.nine{
+                background-color: #8C67AC;
+    }
+    .ten{
+                background-color: #6852F2;
+    }
+</style>
