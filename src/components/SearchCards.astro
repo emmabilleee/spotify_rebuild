@@ -2,11 +2,13 @@
 const header = Astro.props.header;
 const text = Astro.props.text;
 const img = Astro.props.img;
-const {color} = Astro.props;
+const {color, showBagde} = Astro.props;
+
 
 
 ---
 <article class={color}>
+     {showBagde && <p>NEW</p>}
 <h2>{header}</h2>
 <slot/>
 
@@ -18,7 +20,15 @@ const {color} = Astro.props;
         margin-bottom: 10px;
         margin-top: 10px;
     }
-   
+   p{
+    background-color: #c99eee;
+    color: white;
+    padding: 0.2rem;
+    padding-left: 1px;
+    border-radius: 50px;
+text-align: center; 
+margin-left: 100px;
+margin-top: -20px;}
     article {
         background-color: violet;
         border-radius: 5px;

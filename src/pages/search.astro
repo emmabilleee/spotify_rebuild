@@ -3,6 +3,7 @@ import "../styles/style.css";
 import MainLayout from "../layouts/MainLayout.astro"
 import SearchCards from "../components/SearchCards.astro";
 const showSearch = true;
+const showBagde = true;
 
 ---
         <MainLayout showSearch={true} title="Search">
@@ -14,8 +15,8 @@ const showSearch = true;
             <SearchCards header="Specielt til dig" color="second">
             <img src="https://picsum.photos/id/65/150/150" alt="coverbillede" class="drej">
             </SearchCards>
-             <SearchCards header="Hitlister" color="third" >
-            <img src="https://picsum.photos/id/65/150/150" alt="coverbillede" class="drej">
+             <SearchCards header="Hitlister" color="third" showBagde={true}>
+            <img src="https://picsum.photos/id/65/150/150" alt="coverbillede" class="drej" >
             </SearchCards>
              <SearchCards header="Nye udgivelser" color="four">
             <img src="https://picsum.photos/id/65/150/150" alt="coverbillede" class="drej">
@@ -23,13 +24,13 @@ const showSearch = true;
              <SearchCards header="Opdag" color="fifth">
             <img src="https://picsum.photos/id/65/150/150" alt="coverbillede" class="drej">
             </SearchCards>
-             <SearchCards header="Årstider" color="sixth">
+             <SearchCards header="Årstider" color="sixth" showBagde={true}>
             <img src="https://picsum.photos/id/65/150/150" alt="coverbillede" class="drej">
             </SearchCards>
               <SearchCards header="Nye udgivelser" color="seven">
             <img src="https://picsum.photos/id/65/150/150" alt="coverbillede" class="drej">
             </SearchCards>
-             <SearchCards header="Pop" color="eight">
+             <SearchCards header="Pop" color="eight" showBagde={true}>
             <img src="https://picsum.photos/id/65/150/150" alt="coverbillede" class="drej">
             </SearchCards>
               <SearchCards header="Sommer" color="nine">
@@ -41,19 +42,19 @@ const showSearch = true;
                 <SearchCards header="Hiphop" color="first">
             <img src="https://picsum.photos/id/65/150/150" alt="coverbillede" class="drej">
             </SearchCards>
-            <SearchCards header="EQUAL" color="second">
+            <SearchCards header="EQUAL" color="second" showBagde={true}>
             <img src="https://picsum.photos/id/65/150/150" alt="coverbillede" class="drej">
             </SearchCards>
              <SearchCards header="Hygge" color="third">
             <img src="https://picsum.photos/id/65/150/150" alt="coverbillede" class="drej">
             </SearchCards>
-             <SearchCards header="Træning" color="four">
+             <SearchCards header="Træning" color="four" showBagde={true}>
             <img src="https://picsum.photos/id/65/150/150" alt="coverbillede" class="drej">
             </SearchCards>
              <SearchCards header="Rock" color="fifth">
             <img src="https://picsum.photos/id/65/150/150" alt="coverbillede" class="drej">
             </SearchCards>
-             <SearchCards header="Hjemme" color="sixth">
+             <SearchCards header="Hjemme" color="sixth" showBagde={true}>
             <img src="https://picsum.photos/id/65/150/150" alt="coverbillede" class="drej">
             </SearchCards>
               <SearchCards header="Fokus" color="seven">
