@@ -1,0 +1,17 @@
+---
+import "../styles/style.css";
+import Button from "../components/Button.astro";
+import OpretPlayliste from "../components/OpretPlayliste.astro";
+import Bibliotek from "../components/Bibliotek.astro"
+---
+     <section class="bibliotek">
+        <Bibliotek></Bibliotek>
+    </section>
+    <section class="udforsk">
+        <OpretPlayliste header="Opret din første playliste" text="Det er nemt - vi skal nok hjælpe dig" ></OpretPlayliste>
+        <Button variant="third">Opret playliste</Button> 
+    </section> 
+    <section class="udforsk">
+        <OpretPlayliste header="Lad os finde nogle podcast du kan følge" text="Vi holder dig orienteret om nye episoder" ></OpretPlayliste>
+        <Button variant="third" class="udforsk_knap">Udforsk podcast</Button> 
+    </section>   

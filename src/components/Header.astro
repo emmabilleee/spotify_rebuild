@@ -1,0 +1,36 @@
+---
+import "../styles/style.css";
+import Button from "../components/Button.astro";
+import Pil from "../components/Pil.astro";
+const showSearch = true;
+
+
+---
+        <div class="venstre">
+            <Pil><img src="/icons/back-btn.svg" alt="coverbillede" class="icons"></Pil>
+            <Pil><img src="/icons/forward-btn.svg" alt="coverbillede" class="icons"></Pil>
+     
+    
+            {showSearch && 
+        <input type="text" id="search" name="search" placeholder="Hvad vil du lytte til?">
+    </form>}
+   </div>
+  
+        <div class="højre">
+            <Button variant="primary">Tilmeld dig</Button>   
+            <Button variant="secondary">Log på</Button>  
+        </div> 
+<style>
+    #search{
+background-color: rgb(73, 73, 73);
+border: none;
+padding: 1rem;
+border-radius: 50px;
+color: white;
+padding-right: 50px;
+    }
+    #search:hover{
+       border: white 2px solid;
+ 
+    }
+    </style>

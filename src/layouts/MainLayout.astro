@@ -6,9 +6,10 @@ import Button from "../components/Button.astro";
 import OpretPlayliste from "../components/OpretPlayliste.astro";
 import Pil from "../components/Pil.astro";
 import Bibliotek from "../components/Bibliotek.astro"
-
-
+import Aside from "../components/Aside.astro";
+import Header from "../components/Header.astro"
 const {title}= Astro.props;
+
 
 ---
 
@@ -17,7 +18,7 @@ const {title}= Astro.props;
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{title}</title>
+    <title>{}</title>
 </head>
 <body>
     <nav>
@@ -26,14 +27,7 @@ const {title}= Astro.props;
     </nav>
 
     <header>
-        <div class="venstre">
-            <Pil><img src="/icons/back-btn.svg" alt="coverbillede" class="icons"></Pil>
-            <Pil><img src="/icons/forward-btn.svg" alt="coverbillede" class="icons"></Pil>
-        </div>
-        <div class="højre">
-            <Button variant="primary">Tilmeld dig</Button>   
-            <Button variant="secondary">Log på</Button>  
-        </div> 
+       <Header></Header>
     </header>
 
     <main>
@@ -41,17 +35,7 @@ const {title}= Astro.props;
     </main>
 
     <aside>
-        <section class="bibliotek">
-<Bibliotek></Bibliotek>
-        </section>
-        <section class="udforsk">
-            <OpretPlayliste header="Opret din første playliste" text="Det er nemt - vi skal nok hjælpe dig" ></OpretPlayliste>
-            <Button variant="third">Opret playliste</Button> 
-        </section> 
-        <section class="udforsk">
-            <OpretPlayliste header="Lad os finde nogle podcast du kan følge" text="Vi holder dig orienteret om nye episoder" ></OpretPlayliste>
-            <Button variant="third" class="udforsk_knap">Udforsk podcast</Button> 
-        </section>   
+      <Aside>  
     </aside>  
 
 </body>
